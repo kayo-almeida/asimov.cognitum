@@ -4,17 +4,15 @@
 >
 
 ## Stack
-- [~] Front-End
-- [~] Back-end
-- [~] Global
+- [ ] Front-End
+- [ ] Back-end
+- [ ] Global
 
 ## Are there tests?
->
-> - [~] Yes
-> - [~] No
-> 
+- [ ] Yes
+- [ ] No
 
 ## Screenshots, screen recordings or file (optional)
 >
-> - Screenshot, file or recording
+> Screenshot, file or recording
 > 

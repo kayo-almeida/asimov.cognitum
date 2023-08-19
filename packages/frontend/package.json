@@ -17,7 +17,8 @@
     "web-vitals": "^3.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "start:dev": "react-scripts start",
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x} --cache --max-warnings=0",
     "lint:fix": "eslint src/**/*.ts{,x} --fix"
   },
