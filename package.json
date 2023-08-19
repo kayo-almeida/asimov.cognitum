@@ -5,10 +5,6 @@
   "repository": "git@github.com:victorS7P/asimov.cognitum.git",
   "author": "Kayo Almeida <kalmeida@questrade.com>",
   "license": "MIT",
-  "workspaces": [
-    "asimov-frontend",
-    "asimov-backend"
-  ],
   "devDependencies": {
     "lerna": "^7.1.5"
   }
