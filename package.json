@@ -8,7 +8,7 @@
   "scripts": {
     "build": "lerna run build",
     "start:dev": "lerna run start:dev",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged && yarn test"
   },
   "devDependencies": {
     "husky": "^8.0.3",
