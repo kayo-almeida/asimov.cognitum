@@ -7,9 +7,16 @@
   "license": "MIT",
   "scripts": {
     "build": "lerna run build",
-    "start:dev": "lerna run start:dev"
+    "start:dev": "lerna run start:dev",
+    "precommit": "lint-staged && yarn test"
   },
   "devDependencies": {
+    "husky": "4",
     "lerna": "^7.1.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lerna run --concurrency 1 --stream precommit"
+    }
   }
 }
