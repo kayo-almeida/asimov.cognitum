@@ -11,7 +11,7 @@
     "precommit": "lint-staged && yarn test"
   },
   "devDependencies": {
-    "husky": "^8.0.3",
+    "husky": "4",
     "lerna": "^7.1.5"
   },
   "husky": {
