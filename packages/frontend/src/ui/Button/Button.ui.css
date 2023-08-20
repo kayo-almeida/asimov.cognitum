@@ -1,0 +1,17 @@
+.button-container {
+  padding: 8px 16px;
+  border-radius: 1rem;
+  background-color: #0F0400;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.button-container .button-label {
+  color: #FCFCFC;
+  font-size: 12px;
+  font-family: 'Public Sans';
+}
+
+.button-container:hover {
+  opacity: 0.8;
+}

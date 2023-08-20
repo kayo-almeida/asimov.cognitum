@@ -1,0 +1,56 @@
+.affinity-select-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.affinity-select-container .affinity-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 20px 0px 10px;
+}
+
+.affinity-select-container .affinity-range {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.affinity-select-container .affinity-range .affinity-value {
+  width: 75px;
+  height: 60px;
+  background-color: #F0F3F9;
+  border: 1px solid #00000010;
+  font-size: 32px;
+  font-weight: 700;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease all;
+  cursor: pointer;
+}
+
+.affinity-select-container .affinity-range .affinity-value:hover {
+  opacity: 0.8;
+}
+
+.affinity-select-container .affinity-range .affinity-value.selected {
+  transform: rotate(-10deg);
+  color: white;
+  background-color: #8668B5;
+  box-shadow: 0px 4px 15px 0px #8466B499;
+}
+
+.affinity-select-container .affinity-range .affinity-value.selected:hover {
+  opacity: 1;
+}
+
+.affinity-select-container .affinity-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 15px 0px 15px;
+  font-size: 12px;
+}

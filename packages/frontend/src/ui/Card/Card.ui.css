@@ -1,0 +1,103 @@
+.card-container {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #00000022;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.card-container .card-header {
+  background-color: #896DB8;
+  display: flex;
+  position: relative;
+  background-size: contain;
+}
+
+.card-container .card-header .card-title {
+  color: #FFFFFF;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+
+.card-container .card-header .card-title .card-brand {
+  font-family: 'Tilt Warp';
+  font-size: 36px;
+}
+
+.card-container .card-header .card-title .card-slogan {
+  font-family: 'Roboto';
+  font-size: 12px;
+}
+
+.card-container .card-header .card-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+}
+
+.card-container .card-header .card-img {
+  width: 100%;
+}
+
+.card-container .card-footer {
+  font-size: 12px;
+  line-height: 17px;
+  margin: 25px;
+  margin-right: 100px;
+}
+
+.card-container.alternative .card-header {
+  background-color: #FBFBFB;
+}
+
+.card-container.alternative .card-title {
+  color: #000000;
+}
+
+.card-container.alternative .card-header .card-logo {
+  fill: #886CB7;
+}
+
+
+.card-container .card-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 200px 30px;
+}
+
+.card-container .card-header-text .card-header-h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.card-container .card-header-text .card-header-h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.card-container .card-header-text .card-header-h3 {
+  font-size: 26px;
+}
+
+.card-container .card-header-text .card-header-h4 {
+  font-size: 14px;
+  margin: 20px 0px;
+}
+.card-container .card-header-text .card-header-h5 {
+  font-size: 14px;
+}
+
+.card-container.alternative .reset-link {
+  display: block;
+  margin: 0px 0px 30px 30px;
+  font-size: 14px;
+  color: #2F80ED;
+  cursor: pointer;
+}
+
+.card-container.alternative .reset-link:hover {
+  text-decoration: underline;
+}
