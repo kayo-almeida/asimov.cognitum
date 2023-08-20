@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@redux-saga/core": "^1.2.3",
+    "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^6.0.1",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
@@ -10,19 +13,24 @@
     "@types/node": "^20.5.1",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
+    "axios": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-grid-system": "^8.1.9",
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
+    "redux-saga": "^1.2.3",
     "typescript": "^5.1.6",
     "web-vitals": "^3.4.0"
   },
   "scripts": {
-    "build": "react-scripts build",
-    "start:dev": "react-scripts start",
+    "build": "craco build",
+    "start:dev": "craco start",
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x} --cache --max-warnings=0",
     "lint:fix": "eslint src/**/*.ts{,x} --fix",
     "precommit": "lint-staged && yarn test",
-    "test": "cross-env CI=true react-scripts test --env=jsdom"
+    "test": "cross-env CI=true craco test --env=jsdom"
   },
   "browserslist": {
     "production": [
@@ -44,22 +52,31 @@
     "eslint": "^8.24.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard-with-typescript": "^37.0.0",
     "eslint-import-resolver-typescript": "^3.5.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-n": "^15.0.0 || ^16.0.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "lint-staged": "^14.0.0",
-    "prettier": "^2.7.1"
+    "lint-staged": "^14.0.0"
   },
   "lint-staged": {
     "src/**/*.js*": [
       "yarn lint"
     ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "@app/(.*)": "<rootDir>/src/app/$1",
+      "@assets/(.*)": "<rootDir>/src/assets/$1",
+      "@components/(.*)": "<rootDir>/src/components/$1",
+      "@enums/(.*)": "<rootDir>/src/enums/$1",
+      "@redux/(.*)": "<rootDir>/src/redux/$1",
+      "@routes/(.*)": "<rootDir>/src/routes/$1",
+      "@screens/(.*)": "<rootDir>/src/screens/$1",
+      "@ui/(.*)": "<rootDir>/src/ui/$1"
+    }
   }
 }
