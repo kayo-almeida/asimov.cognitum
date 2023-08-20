@@ -14,6 +14,7 @@ import { ConfigService } from '@nestjs/config';
 import { ExceptionViewer } from '@api/filters/exception-viewer.filter';
 import { GlobalExceptionFilter } from '@api/filters/global-exception.filter';
 import { ResponseInterceptor } from '@api/interceptors/response.interceptor';
+import { writeFileSync } from 'fs';
 
 export async function configureNest(app: INestApplication) {
   const appOptions = appSettings.app;
@@ -47,8 +48,6 @@ export async function configureNest(app: INestApplication) {
   const flub = new ExceptionViewer(app);
   await flub.configure();
 
-  const configService = app.get(ConfigService);
-
   const config = new DocumentBuilder()
     .setTitle('ASMV')
     .setDescription('Escola do amanhã')
@@ -56,5 +55,6 @@ export async function configureNest(app: INestApplication) {
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
+  writeFileSync('./swagger-spec.json', JSON.stringify(document));
   SwaggerModule.setup('api', app, document);
 }
