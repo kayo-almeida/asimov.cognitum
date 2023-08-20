@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.2.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "typescript": "^5.1.6",
     "web-vitals": "^3.4.0"
@@ -45,18 +46,15 @@
     "eslint": "^8.24.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard-with-typescript": "^37.0.0",
     "eslint-import-resolver-typescript": "^3.5.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-n": "^15.0.0 || ^16.0.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "lint-staged": "^14.0.0",
-    "prettier": "^2.7.1"
+    "lint-staged": "^14.0.0"
   },
   "lint-staged": {
     "src/**/*.js*": [

@@ -2,9 +2,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@presentation/*": [
-        "./src/presentation/*"
-      ]
+      "@presentation/*": ["./src/presentation/*"],
+      "@data/*": ["./src/data/*"],
+      "@domain/*": ["./src/domain/*"],
+      "@shared/*": ["./src/shared/*"]
     }
   }
 }
