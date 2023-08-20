@@ -2,10 +2,14 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@presentation/*": ["./src/presentation/*"],
-      "@data/*": ["./src/data/*"],
-      "@domain/*": ["./src/domain/*"],
-      "@shared/*": ["./src/shared/*"]
+      "@app/*": ["./src/app/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@enums/*": ["./src/enums/*"],
+      "@redux/*": ["./src/redux/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@screens/*": ["./src/screens/*"],
+      "@ui/*": ["./src/ui/*"]
     }
   }
 }
