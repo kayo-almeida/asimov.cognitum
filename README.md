@@ -6,6 +6,10 @@ Além disso é uma plataforma completa de ensino onde todo o conteúdo é gerado
 
 Asimov! O futuro do ensino, é pra todos.
 
+---
+
+#### (next instructions in English for global understanding)
+
 ## API Docs
   -  [SWAGGER FILE](https://github.com/kayo-almeida/asimov.cognitum/tree/main/packages)
   -  [Onlyne API documentation (soon)]()
@@ -41,12 +45,10 @@ If you do not have Docker on your computer, please follow the instructions:
 #### Windows
 
 - [How to install docker on Windows](https://docs.docker.com/docker-for-windows/install/)
-- [How to install `gcloud` SDK on Windows](https://cloud.google.com/sdk/docs/quickstart-windows)
 
 #### Mac
 
 - [How to install docker on Mac](https://docs.docker.com/docker-for-mac/install/)
-- [How to install `gcloud` SDK on Mac](https://cloud.google.com/sdk/docs/quickstart-macos)
 
 ## Before start
 
