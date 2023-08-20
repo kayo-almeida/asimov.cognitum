@@ -5,7 +5,7 @@ import {
   VERSION_NEUTRAL,
 } from '@nestjs/common';
 import { HealthCheck, HealthCheckService } from '@nestjs/terminus';
-import { HealthzService } from './healthz.service';
+import { HealthzService } from '@infra/service/healthz.service';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
 
 @Controller({ version: VERSION_NEUTRAL })
