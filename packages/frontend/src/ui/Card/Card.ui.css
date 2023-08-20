@@ -1,0 +1,49 @@
+.card-container {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #0000000A;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.card-container .card-header {
+  background-color: #896DB8;
+  display: flex;
+  position: relative;
+  background-size: contain;
+}
+
+.card-container .card-header .card-title {
+  color: #FFFFFF;
+  position: absolute;
+  top: 20px;
+  left: 13px;
+}
+
+.card-container .card-header .card-title .card-brand {
+  font-family: 'Tilt Warp';
+  font-size: 36px;
+}
+
+.card-container .card-header .card-title .card-slogan {
+  font-family: 'Roboto';
+  font-size: 12px;
+}
+
+.card-container .card-header .card-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+}
+
+.card-container .card-header .card-img {
+  width: 100%;
+}
+
+.card-container .card-footer {
+  font-size: 12px;
+  line-height: 17px;
+  margin: 25px;
+  margin-right: 100px;
+}
