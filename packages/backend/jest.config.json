@@ -1,0 +1,54 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "modulePaths": [
+    "<rootDir>"
+  ],
+  "rootDir": "./",
+  "moduleNameMapper": {
+    "@api/(.*)": "<rootDir>/src/api/$1",
+    "@config/(.*)": "<rootDir>/src/config/$1",
+    "@domain/(.*)": "<rootDir>/src/domain/$1",
+    "@infra/(.*)": "<rootDir>/src/infra/$1"
+  },
+  "testRegex": ".*\\.spec\\.ts$",
+  "transform": {
+    "^.+\\.ts$": "ts-jest"
+  },
+  "collectCoverageFrom": [
+    "src/**/*.(t|j)s"
+  ],
+  "coveragePathIgnorePatterns": [
+    ".dto.ts",
+    ".spec.ts",
+    ".fixture.ts",
+    "index.ts",
+    ".interface.ts",
+    ".type.ts",
+    ".enum.ts"
+  ],
+  "testEnvironment": "node",
+  "coverageThreshold": {
+    "global": {
+      "branches": 0,
+      "functions": 0,
+      "lines": 0,
+      "statements": 0
+    }
+  },
+  "coverageReporters": [
+    [
+      "text",
+      {
+        "skipFull": true
+      }
+    ],
+    "html",
+    "text-summary",
+    "cobertura"
+  ],
+  "coverageDirectory": "<rootDir>/coverage/"
+}
