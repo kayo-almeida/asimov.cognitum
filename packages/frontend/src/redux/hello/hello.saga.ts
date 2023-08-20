@@ -7,8 +7,8 @@ import { getHelloActionSuccess } from './hello.slice';
 
 function* healthZSaga (): Generator<CallEffect<AxiosResponse<HelloType>> | PutEffect<AnyAction>, void, AxiosResponse<HelloType>> {
   try {
-    const response: AxiosResponse<HelloType> = yield call((a: string) => axios.get<HelloType>(a), 'http://127.0.0.1:3001');
-    yield put(getHelloActionSuccess(response.data));
+    yield call((a: string) => axios.get<HelloType>(a), 'http://127.0.0.1:3001/healthz');
+    yield put(getHelloActionSuccess('hello world'));
   } catch (error) {
     yield put(getHelloActionSuccess('error!!!'));
   }
