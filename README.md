@@ -11,7 +11,7 @@ Asimov! O futuro do ensino, é pra todos.
 #### (next instructions in English for global understanding)
 
 ## API Docs
-  -  [SWAGGER FILE](https://github.com/kayo-almeida/asimov.cognitum/tree/main/packages)
+  -  [SWAGGER FILE]([https://github.com/kayo-almeida/asimov.cognitum/tree/main/packages](https://github.com/kayo-almeida/asimov.cognitum/blob/main/packages/backend/swagger-spec.json))
   -  [Onlyne API documentation (soon)]()
 
 ## Technology/Framework
