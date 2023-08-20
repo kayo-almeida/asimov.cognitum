@@ -44,7 +44,7 @@ export class UserController {
     return user;
   }
 
-  @Put('/user')
+  @Put('/user/:userId')
   @ApiTags('user')
   @ApiOperation({ summary: 'Update a user' })
   public async updateUser(
