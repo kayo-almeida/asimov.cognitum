@@ -26,6 +26,10 @@ export class HealthzController {
       await this.health.check([
         async () => this.healthzService.isMongoHealthy(),
       ]);
+
+      await this.health.check([
+        async () => this.healthzService.isOpenAIHealthy(),
+      ]);
     } catch (err) {
       throw new ServiceUnavailableException(err);
     }

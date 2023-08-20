@@ -21,6 +21,7 @@
     "precommit": "lint-staged && yarn test"
   },
   "dependencies": {
+    "@nestjs/axios": "^3.0.0",
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.0.0",
     "@nestjs/core": "^10.0.0",
@@ -29,6 +30,7 @@
     "@nestjs/swagger": "^7.1.8",
     "@nestjs/terminus": "^10.0.1",
     "mongoose": "^7.4.3",
+    "openai": "^4.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"
   },

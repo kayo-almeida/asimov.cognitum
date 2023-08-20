@@ -16,4 +16,9 @@ export const appSettings: AppSettings = {
     allowedHeaders: '*',
     methods: 'OPTIONS,POST,PUT,PATCH,DELETE,GET',
   },
+  openAi: {
+    url: process.env.OPEN_AI_URL || '',
+    orgId: process.env.OPEN_AI_ORG_ID || '',
+    secretKey: process.env.OPEN_AI_KEY || '',
+  },
 };
